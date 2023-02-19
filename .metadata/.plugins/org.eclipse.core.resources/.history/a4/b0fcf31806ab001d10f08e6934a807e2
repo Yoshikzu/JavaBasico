@@ -1,0 +1,43 @@
+package ApplicationOO;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Triangle triangleX, triangleY;
+		Scanner sc = new Scanner(System.in);
+		double a, b, c;
+		
+		System.out.println("Informe os lados do Triangulo X: ");
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();
+		
+		triangleX = new Triangle(a,b,c);
+		
+		System.out.println("Informe os lados do Triangulo X: ");
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();
+		
+		triangleY = new Triangle(a,b,c);
+		
+		triangleX.CalcularArea();
+		triangleY.CalcularArea();
+		
+		System.out.printf("Triangulo X area: %.2%n",triangleX.getArea());
+		System.out.printf("Triangulo Y area: %.2%n",triangleY.getArea());
+		if(triangleX.getArea() > triangleY.getArea()) 
+		   System.out.println("Maior área: Triangulo X");
+		else if (triangleX.getArea() < triangleY.getArea())
+			System.out.println("Maior área: Triangulo Y");
+		else
+			System.out.println("Triangulos Iguais");
+		
+		
+		
+
+	}
+
+}

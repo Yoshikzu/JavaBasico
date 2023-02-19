@@ -1,0 +1,16 @@
+
+public class FuncoesString {
+
+	public static void main(String[] args) {
+		String original = "abcde FHGSAS asas";
+		String s01 = original.toLowerCase();
+		
+		System.out.println(original);
+		System.out.println(s01);
+		
+		
+		
+
+	}
+
+}

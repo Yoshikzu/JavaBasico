@@ -1,0 +1,27 @@
+package ApplicationSemOO;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		double xA, xB, xC, yA, yB, yC, xArea, yArea;
+		
+		System.out.println("Informe os lados do Triangulo X: ");
+		xA = sc.nextDouble();
+		xB = sc.nextDouble();
+		xC = sc.nextDouble();
+		
+		System.out.println("Informe os lados do Triangulo Y: ");
+		yA = sc.nextDouble();
+		yB = sc.nextDouble();
+		yC = sc.nextDouble();
+		
+		
+
+	}
+
+}
